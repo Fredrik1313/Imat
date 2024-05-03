@@ -1,12 +1,17 @@
 package imat;
 
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import se.chalmers.cse.dat216.project.IMatDataHandler;
+import se.chalmers.cse.dat216.project.Product;
+import se.chalmers.cse.dat216.project.ShoppingItem;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -14,12 +19,12 @@ import javafx.stage.Stage;
  * and open the template in the editor.
  */
 public class iMatApp extends Application {
-    
+
+
     @Override
     public void start(Stage stage) throws Exception {
-        
         ResourceBundle bundle = java.util.ResourceBundle.getBundle("imat/resources/iMat");
-        
+
         Parent root = FXMLLoader.load(getClass().getResource("imat_app.fxml"), bundle);
         
         Scene scene = new Scene(root, 1000, 700);
