@@ -46,7 +46,7 @@ public class StringBox {
             }
         }
 
-        if ((strBox.length() < min) || (strBox.length() > max)){
+        else if ((strBox.length() < min) || (strBox.length() > max)){
             if (min == max){
                 errorBox("Vänligen skriv "+max+" siffror");}
             else {
