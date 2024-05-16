@@ -7,13 +7,24 @@ import se.chalmers.cse.dat216.project.ShoppingItem;
 import java.util.*;
 
 public class iMatBackendController {
-    private Map<String, Product> productMap = new HashMap<>();
+    private List<Product> productList = new ArrayList<>();
     public List<Order> previousOrders = new ArrayList<>();
     public List<Order> savedOrders = new ArrayList<>();
     List<SortedProduct> FrequentlyPurchasedList = new ArrayList<>();
     List<Product> mostPurchasedProducts = new ArrayList<>();
 
     List<Product> sortedListToReturn = new ArrayList<>();
+
+    //Returns list of products
+    public List<Product> getProductList() {
+        return productList;
+    }
+
+    public void returnSortedProductList()
+    {
+
+    }
+
     //Function for sorting hte most purchased products in the store.
     private void sortMostPurchasedProducts() {
         mostPurchasedProducts.sort(Comparator.comparing(Product::getProductId));
