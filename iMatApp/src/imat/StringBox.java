@@ -25,9 +25,11 @@ public class StringBox {
     String getStrBox(){
         return strBox;
     }
-
+    void updateStrBox(String newStrbox){
+        this.strBox=newStrbox;
+    }
     void emptyBox(){
-        strBox="";
+        this.strBox="";
     }
 
     void confirmBox(){
@@ -56,3 +58,4 @@ public class StringBox {
 
     }
 }
+//test
