@@ -37,11 +37,12 @@ public class StringBox {
                     errorBox("Vänligen skriv bara siffror 0-9");
                     break;
                 }
-        else-if(onlyAcceptNoneSpecialChar){
-            for(int i = 0; i < strBox.length(); i++){
+        else if(onlyAcceptNoneSpecialChar){
+            for(int a = 0; a < strBox.length(); a++){
                 if (OnlyAcceptNoneSpecialCharList.indexOf(strBox.toLowerCase().charAt(i))==-1){
-                    errorBox("Vänligen skriv ");
-                    break;}
+                    errorBox("Vänligen skriv inga specialtecken");
+                    break;
+                }
             }
         }
 
