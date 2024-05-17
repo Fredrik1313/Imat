@@ -24,7 +24,7 @@ public class ProductItem extends AnchorPane {
 
     @FXML
     protected void onClick(Event event){
-        parentController.openDetailedProductView(product);
+        //parentController.openDetailedProductView(product);
     }
     public ProductItem(Product product, String productName,Image productImage, Double productPrice, String productDescription, String productCategory, String productUnit) {
         this.product = product;
