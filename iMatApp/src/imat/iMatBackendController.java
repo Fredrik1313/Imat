@@ -7,27 +7,36 @@ import se.chalmers.cse.dat216.project.ShoppingItem;
 import java.util.*;
 
 public class iMatBackendController {
-
-
+    private List<Product> productList = new ArrayList<>();
     public List<Order> previousOrders = new ArrayList<>();
     public List<Order> savedOrders = new ArrayList<>();
-
+    List<SortedProduct> FrequentlyPurchasedList = new ArrayList<>();
     List<Product> mostPurchasedProducts = new ArrayList<>();
-    List<SortedProduct> frequentlyPurchasedSortedProductList = new ArrayList<>();
-    List<Product> sortedMostPurchasedListToReturn = new ArrayList<>();
+
+    List<Product> sortedListToReturn = new ArrayList<>();
+
+    //Returns list of products
+    public List<Product> getProductList() {
+        return productList;
+    }
+
+    public void returnSortedProductList()
+    {
+
+    }
 
     //Function for sorting hte most purchased products in the store.
     private void sortMostPurchasedProducts() {
         mostPurchasedProducts.sort(Comparator.comparing(Product::getProductId));
         for (Product product : mostPurchasedProducts) {
-            if(frequentlyPurchasedSortedProductList.isEmpty())
+            if(FrequentlyPurchasedList.isEmpty())
             {
-                frequentlyPurchasedSortedProductList.add(new SortedProduct(product,1));
-                System.out.println(frequentlyPurchasedSortedProductList.getLast().product.getName() + "Purchased "+ frequentlyPurchasedSortedProductList.getLast().purchasedTimes + " times");
+                FrequentlyPurchasedList.add(new SortedProduct(product,1));
+                System.out.println(FrequentlyPurchasedList.getLast().product.getName() + "Purchased "+ FrequentlyPurchasedList.getLast().purchasedTimes + " times");
             }
             else
             {
-                for (SortedProduct sortedProduct : frequentlyPurchasedSortedProductList) {
+                for (SortedProduct sortedProduct : FrequentlyPurchasedList) {
 
                     if(sortedProduct.product == product)
                     {
@@ -36,22 +45,22 @@ public class iMatBackendController {
                         break;
                     }
                 }
-                frequentlyPurchasedSortedProductList.add(new SortedProduct(product,1));
+                FrequentlyPurchasedList.add(new SortedProduct(product,1));
 
-                System.out.println(frequentlyPurchasedSortedProductList.getLast().product.getName() + "Purchased "+ frequentlyPurchasedSortedProductList.getLast().purchasedTimes + " times");
+                System.out.println(FrequentlyPurchasedList.getLast().product.getName() + "Purchased "+ FrequentlyPurchasedList.getLast().purchasedTimes + " times");
             }
         }
-        System.out.println("SortedSize:"+ frequentlyPurchasedSortedProductList.size());;
+        System.out.println("SortedSize:"+ FrequentlyPurchasedList.size());;
 
-        for (SortedProduct sp : frequentlyPurchasedSortedProductList) {
-            sortedMostPurchasedListToReturn.add(sp.product);
+        for (SortedProduct sp : FrequentlyPurchasedList) {
+            sortedListToReturn.add(sp.product);
             //System.out.println(sp.product.getName());
         }
     }
 
     //Method for returning the list of the most frequently bought products in the store.
-    public List<Product> getFrequentlyPurchasedSortedProductList() {
-        return sortedMostPurchasedListToReturn;
+    public List<Product> getFrequentlyPurchasedList() {
+        return sortedListToReturn;
     }
 
     //Method which is called to add products to the list of most purchased products list.
