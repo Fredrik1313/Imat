@@ -15,16 +15,12 @@ import se.chalmers.cse.dat216.project.ShoppingItem;
 
 public class MainViewController implements Initializable {
 
-    @FXML
-    Label pathLabel;
 
     IMatDataHandler iMatDataHandler = IMatDataHandler.getInstance();
     private iMatBackendController backendController =  new iMatBackendController();
     public void initialize(URL url, ResourceBundle rb) {
 
         String iMatDirectory = iMatDataHandler.imatDirectory();
-        pathLabel.setText(iMatDirectory);
-
 
 
     }
