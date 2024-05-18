@@ -15,18 +15,13 @@ import se.chalmers.cse.dat216.project.ShoppingItem;
 
 public class MainViewController implements Initializable {
 
-    @FXML
-    Label pathLabel;
+
 
     IMatDataHandler iMatDataHandler = IMatDataHandler.getInstance();
     private iMatBackendController backendController =  new iMatBackendController();
     public void initialize(URL url, ResourceBundle rb) {
 
         String iMatDirectory = iMatDataHandler.imatDirectory();
-        pathLabel.setText(iMatDirectory);
-
-
-
     }
 
         //Efter köp genomfört så kör man denna funktionen med kundvagnen som en lista av ShoppingItems för att uppdatera listan med frekvent köpta objekt.
