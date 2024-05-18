@@ -711,47 +711,6 @@
                     <items>
                         <AnchorPane prefHeight="121.0" prefWidth="997.0" style="-fx-background-color: #DDF2FF;">
                             <children>
-                                <ImageView fx:id="profilMenyLoggaImageView" fitHeight="92.0" fitWidth="90.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="11.0">
-                                    <image>
-                                        <Image url="@resources/iMatLogo.png" />
-                                    </image>
-                                </ImageView>
-                                <Button fx:id="profilMenyProfilButton" layoutX="867.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #0096F7;" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="11.0">
-                                    <font>
-                                        <Font name="System Bold" size="24.0" />
-                                    </font>
-                                    <graphic>
-                                        <ImageView fitHeight="71.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <Image url="@resources/menuProfilPicture.png" />
-                                            </image>
-                                        </ImageView>
-                                    </graphic>
-                                </Button>
-                            </children>
-                        </AnchorPane>
-                    </items>
-                </SplitPane>
-                <SplitPane layoutY="117.0" prefHeight="585.0" prefWidth="1006.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                    <items>
-                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
-                            <children>
-                                <Button fx:id="profilTillbakaButton" layoutX="14.0" layoutY="491.0" mnemonicParsing="false" text="Tillbaka" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0">
-                                    <font>
-                                        <Font name="System Bold" size="36.0" />
-                                    </font>
-                                </Button>
-                            </children></AnchorPane>
-                    </items>
-                </SplitPane>
-            </children>
-        </AnchorPane>
-        <AnchorPane prefHeight="703.0" prefWidth="1006.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-            <children>
-                <SplitPane prefHeight="117.0" prefWidth="1000.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <items>
-                        <AnchorPane prefHeight="121.0" prefWidth="997.0" style="-fx-background-color: #DDF2FF;">
-                            <children>
                                 <ImageView fx:id="leveransMenyLoggaImageView" fitHeight="92.0" fitWidth="90.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="11.0">
                                     <image>
                                         <Image url="@resources/iMatLogo.png" />
@@ -831,5 +790,66 @@
                 </SplitPane>
             </children>
         </AnchorPane>
+        <AnchorPane prefHeight="703.0" prefWidth="1006.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <SplitPane layoutY="117.0" prefHeight="585.0" prefWidth="1006.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <items>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Button fx:id="profilTillbakaButton" layoutX="14.0" layoutY="491.0" mnemonicParsing="false" text="Tillbaka" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Button>
+                        <SplitPane layoutX="197.0" layoutY="69.0" prefHeight="390.0" prefWidth="649.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="100.0">
+                           <items>
+                              <AnchorPane fx:id="profilInfyllningsrutaSplitPane" prefHeight="200.0" prefWidth="200.0" />
+                           </items>
+                        </SplitPane>
+                        <Button fx:id="profilSwishButton" layoutX="53.0" layoutY="97.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="179.0" style="-fx-background-color: #0096F7;" text="SWISH" textFill="WHITE" AnchorPane.bottomAnchor="420.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="750.0" AnchorPane.topAnchor="100.0">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="profilSwishButton" layoutX="53.0" layoutY="191.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="179.0" style="-fx-background-color: #0096F7;" text="KORT" textFill="WHITE" AnchorPane.bottomAnchor="320.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="750.0" AnchorPane.topAnchor="200.0">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="profilKlarnaButton" layoutX="53.0" layoutY="291.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="179.0" style="-fx-background-color: #0096F7;" text="KLARNA" textFill="WHITE" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="750.0" AnchorPane.topAnchor="300.0">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Button>
+                            </children></AnchorPane>
+                    </items>
+                </SplitPane>
+            </children>
+        </AnchorPane>
+          <SplitPane prefHeight="117.0" prefWidth="1000.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                  <AnchorPane prefHeight="121.0" prefWidth="997.0" style="-fx-background-color: #DDF2FF;">
+                      <children>
+                          <ImageView fx:id="profilMenyLoggaImageView" fitHeight="92.0" fitWidth="90.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="11.0">
+                              <image>
+                                  <Image url="@resources/iMatLogo.png" />
+                              </image>
+                          </ImageView>
+                          <Button fx:id="profilMenyProfilButton" layoutX="867.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #0096F7;" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="11.0">
+                              <font>
+                                  <Font name="System Bold" size="24.0" />
+                              </font>
+                              <graphic>
+                                  <ImageView fitHeight="71.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                                      <image>
+                                          <Image url="@resources/menuProfilPicture.png" />
+                                      </image>
+                                  </ImageView>
+                              </graphic>
+                          </Button>
+                      </children>
+                  </AnchorPane>
+              </items>
+          </SplitPane>
     </children>
 </AnchorPane>
