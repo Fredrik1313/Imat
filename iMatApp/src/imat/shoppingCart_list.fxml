@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="75.0" prefWidth="258.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="imat.ShoppingCartList">
+   <children>
+      <Label fx:id="price" layoutX="212.0" layoutY="23.0" prefHeight="27.0" prefWidth="31.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="182.0" layoutY="23.0" text="st">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="quantity" layoutX="129.0" layoutY="23.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="productName" layoutX="22.0" layoutY="23.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
